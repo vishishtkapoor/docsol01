@@ -1,0 +1,65 @@
+Arguments: 
+  C:\Users\vishisht kapoor\scoop\apps\nodejs\current\node.exe C:\Users\vishisht kapoor\scoop\apps\nodejs\current\bin\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\Program Files\PowerShell\7;C:\Program Files\Eclipse Adoptium\jdk-17.0.2.8-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\TDM-GCC-64\bin;C:\Program Files\PowerShell\7\;C:\Users\vishisht kapoor\scoop\apps\nodejs\current\bin;C:\Users\vishisht kapoor\scoop\apps\nodejs\current;C:\Users\vishisht kapoor\scoop\apps\python\current\Scripts;C:\Users\vishisht kapoor\scoop\apps\python\current;C:\Users\vishisht kapoor\scoop\apps\gsudo\current;C:\Users\vishisht kapoor\scoop\shims;C:\Users\vishisht kapoor\AppData\Local\Microsoft\WindowsApps;C:\Users\vishisht kapoor\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\vishisht kapoor\AppData\Local\GitHubDesktop\bin;C:\Users\vishisht kapoor\AppData\Local\Microsoft\WindowsApps
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.6.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\Users\vishisht kapoor\Downloads\docsol\DocSol\package.json: Unexpected token ' ', ..."pescript": "5.1.6"
+   "... is not valid JSON
+      at JSON.parse (<anonymous>)
+      at C:\Users\vishisht kapoor\scoop\persist\nodejs\bin\node_modules\yarn\lib\cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (C:\Users\vishisht kapoor\scoop\persist\nodejs\bin\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Users\vishisht kapoor\scoop\persist\nodejs\bin\node_modules\yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "docsol",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint"
+    },
+    "dependencies": {
+      "@metaplex/js": "^4.12.0",
+      "@nextui-org/react": "^2.1.10",
+      "@solana/wallet-adapter-backpack": "^0.1.14",
+      "@solana/wallet-adapter-base": "^0.9.23",
+      "@solana/wallet-adapter-react": "^0.15.35",
+      "@solana/wallet-adapter-react-ui": "^0.9.34",
+      "@solana/wallet-adapter-wallets": "^0.19.22",
+      "@types/node": "20.4.8",
+      "@types/react": "18.2.19",
+      "@types/react-dom": "18.2.7",
+      "autoprefixer": "10.4.14",
+      "eslint": "8.46.0",
+      "eslint-config-next": "13.4.13",
+      "next": "13.4.13",
+      "postcss": "8.4.27",
+      "react": "18.2.0",
+      "react-dom": "18.2.0",
+      "react-icons": "^4.11.0",
+      "tailwindcss": "3.3.3",
+      "typescript": "5.1.6"
+    
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
