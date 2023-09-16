@@ -1,7 +1,23 @@
-import React from 'react';
+import './globals.css'
+import { Inter } from 'next/font/google'
 
-export default function Home() {
+const inter = Inter({ subsets: ['latin'] })
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+
   return (
-    <></>
-  );
+    <html lang="en">
+      <body className={inter.className}>
+        <div>
+          <div className="grow">
+            {children}
+          </div>
+        </div>
+      </body>
+    </html>
+  )
 }

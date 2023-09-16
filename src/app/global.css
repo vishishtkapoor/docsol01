@@ -3,34 +3,60 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-  --New-Swatch: #130A17;
-  --New-Swatch: #120916;
-  --New-Swatch: #000F1A;
-  --New-Swatch: #000E1C;
-  --New-Swatch: #0C0E19;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --foreground: white;
+  --background: #100525;
 }
 
 body {
-  background-color: var(--New-Swatch);
+  color: var(--foreground);
+  background: var(--background);
+
+  height: 100vh;
+  /* 100% viewport height */
+  display: flex;
+  justify-content: center;
+  /* Center the child div horizontally */
+  align-items: center;
+  /* Center the child div vertically */
 }
 
-.bg-customColor {
-  background-color: var(--New-Swatch);
+body>div {
+  display: flex;
+  flex-direction: column;
+
+  flex: 0 1 auto;
+  /* Let the div grow or shrink within its max-width */
+  max-width: 1500px;
+  /* Set the maximum width */
+  width: 100%;
+  /* Take up available width within the max-width */
+  height: 100%;
+  /* Take up 100% height of the body */
+
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
 
+/* Customize the appearance of the scrollbar thumb and track */
+*::-webkit-scrollbar {
+  width: 10px;
+}
 
+*::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
 
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
 
-
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 10px;
+}

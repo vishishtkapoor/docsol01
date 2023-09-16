@@ -4,7 +4,7 @@ import { RxSketchLogo, RxDashboard, RxPerson } from 'react-icons/rx';
 import { HiOutlineShoppingBag } from 'react-icons/hi';
 import { FiSettings } from 'react-icons/fi';
 
-export default function ({ children }) {
+export default function ({ children }: { children: React.ReactNode[] }) {
   return (
     <div className='flex px-4 pb-4 md:h-[100vh] md:p-4'>
       <div className='fixed rounded-xl gap-2 md:pb-4 w-20 md:h-[100vh] p-4 bbg-[#D4D4D8] md:rounded-[20px] border-r-[1px] flex flex-col justify-between'>

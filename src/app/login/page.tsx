@@ -1,7 +1,8 @@
 'use client';
 
-import supabase from '@/auth/SupabaseClient'
+import supabase from '@/src/auth/SupabaseClient'
 import { Image, Button } from '@nextui-org/react';
+import React from 'react';
 
 export default function SignIn() {
 
